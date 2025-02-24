@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67bc8ea690c0023f4185e051"
+  },
+  "name": "Giovanni",
+  "username": "Gioma",
+  "email": "gioma@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$0eq8eEGBDs7I0eZFrg8ckw$LU4GZDwRZMzZJ7Fa268uofasPxHTIPr6H8TlyyVa3CA",
+  "preferences": "comida",
+  "address": "zona 18 colonia atlantida 7av 12-83",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-24T15:22:14.599Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-24T17:02:33.461Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bc8f5e425577b38c451b1c"
+  },
+  "name": "Medrano",
+  "username": "melano",
+  "email": "melano@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$NBgkCIoejmyTjkaTqX0j6w$eSFXITbHcC0HtBqk7pGim+d3eLKw/R/bX2konAYIfkM",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-24T15:25:18.472Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-24T15:25:18.472Z"
+  }
+}]
