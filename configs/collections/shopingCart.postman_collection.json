@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "2dd25dc1-1d58-42a0-a7d4-47fd03233087",
+		"name": "shopingCart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42618807"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDA3MjEsImV4cCI6MTc0MTEwNDMyMX0.MzU6uqGXSoQ5g9p2OGRCsD050u4adAxU_6OT0Xt61mY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productId\":\"67c71c2b8652bee29909ed0b\",\n  \"quantity\":\"10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/shoppingCart/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"shoppingCart",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDUwMTksImV4cCI6MTc0MTExNTgxOX0.O42YjyiNyQgPhNa4ZN2lsoEUp3dOco83H84wLHDmPkg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productId\":\"67c71c2b8652bee29909ed0b\",\n  \"quantity\":\"10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/shoppingCart/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"shoppingCart",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
