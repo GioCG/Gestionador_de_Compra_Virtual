@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "67c70c5ef4a99ff703e544c5"
+  },
+  "name": "default",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c70d9287d34bea7effdd76"
+  },
+  "name": "Electrodomésticos",
+  "description": "Productos para el hogar",
+  "__v": 0
+}]

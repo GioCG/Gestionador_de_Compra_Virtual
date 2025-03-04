@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "757b29bd-b632-4f81-a8d1-ed397357576d",
+		"name": "product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42618807"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"wasa\",\r\n  \"description\": \"tamales wasa\",\r\n  \"price\": 1200,\r\n  \"categoryName\": \"default\",\r\n  \"stock\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

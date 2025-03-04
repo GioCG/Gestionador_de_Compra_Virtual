@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "c4d2e9ce-a2a1-4773-b46b-7d41003f7278",
+		"name": "category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42618807"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Electrodomésticos\",\r\n  \"description\": \"Productos para el hogar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/category/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
