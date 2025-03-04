@@ -9,6 +9,11 @@ import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import authRoutes from '../src/auth/auth.routs.js'
 import userRoutes from '../src/user/user.routs.js'
+import productRoutes from '../src/product/product.routs.js'
+import categoryRoutes from '../src/category/category.routs.js'
+import shoppingCartRoutes from '../src/buys/shoppingCart/shoppingCart.routs.js'
+import historyRoutes from '../src/buys/purchaseHistory/purchaseHistory.routs.js'
+
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
     app.use(cors());
@@ -20,8 +25,11 @@ const middlewares = (app) => {
  
 const routes = (app) => {
     app.use("/gestionadorCompraVirtual/v1/auth", authRoutes);
-    app.use("/gestionadorCompraVirtual/v1/user", userRoutes);
-
+    app.use("/gestionadorCompraVirtual/v1/product", productRoutes);
+    app.use("/gestionadorCompraVirtual/v1/user",userRoutes);
+    app.use("/gestionadorCompraVirtual/v1/category",categoryRoutes);
+    app.use("/gestionadorCompraVirtual/v1/shoppingCart",shoppingCartRoutes);
+    app.use("/gestionadorCompraVirtual/v1/purchaseHistory",historyRoutes);
 }
  
 const conectarDB = async () => {
