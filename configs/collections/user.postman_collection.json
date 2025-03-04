@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "ef38e670-4995-4580-b70f-a7640e31e16a",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42618807"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\":\"jordi\",\n  \"password\": \"admin12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDA3MjEsImV4cCI6MTc0MTEwNDMyMX0.MzU6uqGXSoQ5g9p2OGRCsD050u4adAxU_6OT0Xt61mY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"eaasa\",\n  \"username\":\"jordi\",\n  \"email\":\"admin1234@gmail.com\",\n  \"preferences\":\"comida\",\n  \"password\": \"admin12345\",\n  \"address\":\"z18 7av col atlantida\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"eaasa\",\n  \"username\":\"jordi\",\n  \"email\":\"admin123@gmail.com\",\n  \"preferences\":\"comida\",\n  \"password\": \"admin12345\",\n  \"address\":\"z18 7av col atlantida\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/auth/registerAdmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"auth",
+						"registerAdmin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

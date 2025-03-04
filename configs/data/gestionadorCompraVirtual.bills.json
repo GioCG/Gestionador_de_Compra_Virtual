@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "67c71e4ee969310f817a608b"
+  },
+  "user": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c71c2b8652bee29909ed0b"
+      },
+      "name": "wasa",
+      "quantity": 10,
+      "price": 1200,
+      "subtotal": 12000,
+      "_id": {
+        "$oid": "67c71e4ee969310f817a608c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67c70e6187d34bea7effdd88"
+      },
+      "name": "Laptop Gamer",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67c71e4ee969310f817a608d"
+      }
+    }
+  ],
+  "total": 14400,
+  "date": {
+    "$date": "2025-03-04T15:37:50.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c72795e8b1db0416db3df5"
+  },
+  "user": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c70e6187d34bea7effdd88"
+      },
+      "name": "Laptop Gamer",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67c72795e8b1db0416db3df6"
+      }
+    }
+  ],
+  "total": 2400,
+  "date": {
+    "$date": "2025-03-04T16:17:25.307Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "name": "eaasa",
+  "username": "jordi",
+  "email": "admin12345@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$dAL6zNyGhrL6iOMzxk+WLA$Nuu6LY2V0hRpwN3ywwwV3/3JXXpAV/pPashb+wx3MZY",
+  "preferences": "comida",
+  "address": "z18 7av col atlantida",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:13:31.457Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:13:31.457Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c70b93881f24fe567a5d82"
+  },
+  "name": "eaasa",
+  "username": "jordi",
+  "email": "admin123@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$JsobSpu/25YEcR2KQFQSrQ$6FlfDTYaqIUgC/IBUD2+vm9huAV+EoTsn0afMukOkmo",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:17:55.541Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:17:55.541Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c70bfe31206434721be975"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "email": "admin@example.com",
+  "password": "$2b$10$V4wvOVDwvKvyTJJw1ghEieHw6s.KOcVc4O/7J6WbfekBssQw7o2jy",
+  "preferences": "comida",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-04T14:19:42.246Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T14:19:42.246Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7173d4979cc0ec925b35a"
+  },
+  "name": "eaasa",
+  "username": "jordi",
+  "email": "admin1234@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$/az1GrQ/vZRasJekfVsuKg$QKzn1Xv5HGTCuKMnXUozBWElNvf0qVKqT2YUPQOqjs4",
+  "preferences": "comida",
+  "address": "z18 7av col atlantida",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-04T15:07:41.282Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T15:07:41.282Z"
+  }
+}]
