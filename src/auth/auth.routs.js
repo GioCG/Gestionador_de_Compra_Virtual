@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { registerAdminValidator,registerCustomerValidator, loginValidator } from "../middlewares/validator.js";
-import { login,registerCustomer,registerAdmin } from "../auth/auth.controller.js";
+import { registerCustomerValidator, loginValidator } from "../middlewares/validator.js";
+import { login,registerCustomer } from "../auth/auth.controller.js";
 import {deleteFileOnError} from "../middlewares/delete-file-on-error.js"
 
 const router = Router();
@@ -21,12 +21,4 @@ router.post(
     registerCustomer
 );
 
-router.post(
-    '/registerAdmin',[
-        registerAdminValidator,
-        deleteFileOnError,
-    ],
-    registerAdmin
-);
- 
 export default router;

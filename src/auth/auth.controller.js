@@ -41,9 +41,11 @@ export const login = async (req, res) => {
 
 export const registerCustomer = async (req, res) => {
     try {
-        const { name, username, email, password,preferences,address } = req.body;
+        const { name, username, email, password, preferences, address, role } = req.body;
 
-        const encryptedPassword = await hash (password);
+        const assignedRole = role && role === 'ADMIN_ROLE' ? 'ADMIN_ROLE' : 'CUSTOMER_ROLE';
+
+        const encryptedPassword = await hash(password);
 
         const user = await User.create({
             name,
@@ -52,51 +54,23 @@ export const registerCustomer = async (req, res) => {
             password: encryptedPassword,
             preferences,
             address,
-            role: "CUSTOMER_ROLE",
-            })
+            role: assignedRole, 
+        });
 
         return res.status(201).json({
-            message: "Customer registered successfully",
+            message: `${assignedRole === 'ADMIN_ROLE' ? 'Admin' : 'Customer'} registered successfully`,
             userDetails: {
-                customer: user.name
+                name: user.name,
+                role: user.role
             }
         });
 
     } catch (error) {
         console.log(error);
         return res.status(500).json({
-            message: "Customer registration failed",
+            message: "Registration failed",
             error: error.message
-        })
-    }
-}
-
-export const registerAdmin = async (req, res) => {
-    try {
-        const { name, username, email, password } = req.body;
-
-        const encryptedPassword = await hash (password);
-
-        const user = await User.create({
-            name,
-            username,
-            email: email.toLowerCase(),
-            password: encryptedPassword,
-            role: "ADMIN_ROLE",
-            })
-
-        return res.status(201).json({
-            message: "Admin registered successfully",
-            userDetails: {
-                admin: user.name
-            }
         });
-
-    } catch (error) {
-        console.log(error);
-        return res.status(500).json({
-            message: "Admin registration failed",
-            error: error.message
-        })
     }
-}
+};
+
