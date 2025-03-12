@@ -13,6 +13,7 @@ import productRoutes from '../src/product/product.routs.js'
 import categoryRoutes from '../src/category/category.routs.js'
 import shoppingCartRoutes from '../src/buys/shoppingCart/shoppingCart.routs.js'
 import historyRoutes from '../src/buys/purchaseHistory/purchaseHistory.routs.js'
+import billRoutes from '../src/buys/bill/bill.routs.js'
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -30,6 +31,7 @@ const routes = (app) => {
     app.use("/gestionadorCompraVirtual/v1/category",categoryRoutes);
     app.use("/gestionadorCompraVirtual/v1/shoppingCart",shoppingCartRoutes);
     app.use("/gestionadorCompraVirtual/v1/purchaseHistory",historyRoutes);
+    app.use("/gestionadorCompraVirtual/v1/bill",billRoutes);
 }
  
 const conectarDB = async () => {
@@ -45,7 +47,10 @@ const conectarDB = async () => {
 export const initServer = async () => {
     const app = express();
     const port = process.env.PORT || 3000;
- 
+    app.use((req, res, next) => {
+        res.setHeader("Content-Type", "application/json");
+        next();
+      });
     try {
         middlewares(app);
         conectarDB();
