@@ -1,0 +1,252 @@
+[{
+  "_id": {
+    "$oid": "67c71e4ee969310f817a608b"
+  },
+  "user": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c71c2b8652bee29909ed0b"
+      },
+      "name": "wasa",
+      "quantity": 10,
+      "price": 1200,
+      "subtotal": 12000,
+      "_id": {
+        "$oid": "67c71e4ee969310f817a608c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67c70e6187d34bea7effdd88"
+      },
+      "name": "Laptop Gamer",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67c71e4ee969310f817a608d"
+      }
+    }
+  ],
+  "total": 14400,
+  "date": {
+    "$date": "2025-03-04T15:37:50.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c72795e8b1db0416db3df5"
+  },
+  "user": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c70e6187d34bea7effdd88"
+      },
+      "name": "Laptop Gamer",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67c72795e8b1db0416db3df6"
+      }
+    }
+  ],
+  "total": 2400,
+  "date": {
+    "$date": "2025-03-04T16:17:25.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ae4e015dfe173d9af300"
+  },
+  "user": {
+    "$oid": "67c70a8b881f24fe567a5d79"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c71c2b8652bee29909ed0b"
+      },
+      "name": "wasa",
+      "quantity": 1,
+      "price": 1200,
+      "subtotal": 1200,
+      "_id": {
+        "$oid": "67c7ae4e015dfe173d9af301"
+      }
+    }
+  ],
+  "total": 1200,
+  "date": {
+    "$date": "2025-03-05T01:52:14.498Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7db75207061dbcb32b305"
+  },
+  "user": {
+    "$oid": "67c7d41e942cbdfbf5eb40f1"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c71c2b8652bee29909ed0b"
+      },
+      "name": "wasa",
+      "quantity": 1,
+      "price": 1200,
+      "subtotal": 1200,
+      "_id": {
+        "$oid": "67c7db75207061dbcb32b306"
+      }
+    }
+  ],
+  "total": 1200,
+  "date": {
+    "$date": "2025-03-05T05:04:53.010Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0eca4c32e1d3ce51307d9"
+  },
+  "user": {
+    "$oid": "67d0d1440f2b066271e9ef10"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c70e6187d34bea7effdd88"
+      },
+      "name": "Laptop Gamer",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67d0eca4c32e1d3ce51307da"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67c70e8cd884cc62a4533f0a"
+      },
+      "name": "teclado",
+      "quantity": 1,
+      "price": 1200,
+      "subtotal": 1200,
+      "_id": {
+        "$oid": "67d0eca4c32e1d3ce51307db"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67d0ebcda0765f929cb652cf"
+      },
+      "name": "Monitor HP",
+      "quantity": 4,
+      "price": 1200,
+      "subtotal": 4800,
+      "_id": {
+        "$oid": "67d0eca4c32e1d3ce51307dc"
+      }
+    }
+  ],
+  "total": 8400,
+  "date": {
+    "$date": "2025-03-12T02:08:36.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0fe448788f720758b142b"
+  },
+  "user": {
+    "$oid": "67d0d1440f2b066271e9ef10"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67d0ebcda0765f929cb652cf"
+      },
+      "name": "Monitor HP",
+      "quantity": 4,
+      "price": 1200,
+      "subtotal": 4800,
+      "_id": {
+        "$oid": "67d0fe448788f720758b142c"
+      }
+    }
+  ],
+  "total": 4800,
+  "date": {
+    "$date": "2025-03-12T03:23:48.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d100b2eeae277ed1019d63"
+  },
+  "user": {
+    "$oid": "67d0d1440f2b066271e9ef10"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c70e8cd884cc62a4533f0a"
+      },
+      "name": "teclado",
+      "quantity": 8,
+      "price": 1200,
+      "subtotal": 9600,
+      "_id": {
+        "$oid": "67d100b2eeae277ed1019d64"
+      }
+    }
+  ],
+  "total": 9600,
+  "date": {
+    "$date": "2025-03-12T03:34:10.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d105fb0b29c0a8a182dc82"
+  },
+  "user": {
+    "$oid": "67d0d1440f2b066271e9ef10"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67c70e8cd884cc62a4533f0a"
+      },
+      "name": "teclado",
+      "quantity": 2,
+      "price": 1200,
+      "subtotal": 2400,
+      "_id": {
+        "$oid": "67d11c9fd8a61efef1248a9d"
+      }
+    }
+  ],
+  "total": 2400,
+  "date": {
+    "$date": "2025-03-12T03:56:43.614Z"
+  },
+  "__v": 5
+}]

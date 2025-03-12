@@ -1,52 +1,28 @@
 import { Router } from 'express';
 import {addProduct,searchProduct,listProducts,listProductsFilteredByCategory,
-        productStock,mostSaledProduct,mostSaledProductFromName,mostSaledProducts}  from "../product/product.controler.js";
+    editProductStock,editProduct,mostSaledProduct,mostSaledProducts,deleteProduct}  from "../product/product.controler.js";
+import {isAdmin} from "../middlewares/validar-roles.js";
+import {validarJWT} from "../middlewares/validar-jwt.js";
+import { addProductValidations, editProductValidations, editProductStockValidations,validateSearchQuery } from "../middlewares/product-validator.js";
 
 const router = Router();
 
-router.post(
-    "/",[
-    ],
-    addProduct
-);
-router.get(
-    "/search",[
+router.post("/", validarJWT, isAdmin, addProductValidations, addProduct);
 
-    ],
-     searchProduct
-);
-router.get(
-    "/",[
+router.get("/search/:name", validarJWT, isAdmin,validateSearchQuery, searchProduct);
 
-    ],
-     listProducts
-);
-router.get(
-    "/category/:categoryId",[
+router.get("/",  validarJWT, isAdmin, listProducts);
 
-    ],
-     listProductsFilteredByCategory
-);
-router.get(
-    "/stock/:productId",[
+router.get("/most-saled-products", mostSaledProducts);
 
-    ],
-     productStock
-);
-router.get(
-    "/most-saled",[
-    ],
-     mostSaledProduct
-);
-router.get(
-    "/most-saled-products",[
-    ],
-     mostSaledProducts
-);
-router.get(
-    "/most-saled-from-name",[
-    ],
-    mostSaledProductFromName
-);
+router.get("/most-saled",mostSaledProduct);
+
+router.get("/category/:categoryName", validarJWT, listProductsFilteredByCategory);
+
+router.put("/:id", validarJWT, isAdmin, editProductValidations, editProduct);
+
+router.put("/stock/:id", validarJWT, isAdmin, editProductStockValidations, editProductStock);
+
+router.delete("/:id", validarJWT, isAdmin, deleteProduct);
 
 export default router;
