@@ -54,20 +54,113 @@
 },
 {
   "_id": {
-    "$oid": "67c7173d4979cc0ec925b35a"
+    "$oid": "67c7ca0799c392b4d047f2af"
   },
-  "name": "eaasa",
-  "username": "jordi",
+  "name": "Juan Pérez Actualizado",
+  "username": "juan123_actualizado",
   "email": "admin1234@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$/az1GrQ/vZRasJekfVsuKg$QKzn1Xv5HGTCuKMnXUozBWElNvf0qVKqT2YUPQOqjs4",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$H+WkBCz7OpzQEt1kj92UKA$EREQo3Vofam0Se2YPQ0xB4dL9S+fScS06ZVAkheGpGA",
+  "preferences": "Nuevas preferencias",
+  "address": "Nueva Calle 456",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T03:50:31.243Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T03:51:53.422Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7d41e942cbdfbf5eb40f1"
+  },
+  "name": "Juan Pérez Actualizado",
+  "username": "juan123_actualizdo",
+  "email": "wasa1234@gmail.com",
+  "password": "wasa2121",
+  "preferences": "Nuevas preferencias",
+  "address": "Nueva Calle 456",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-05T04:33:34.420Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-11T00:32:00.681Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67cf853fbb3dfd3f647a4c7a"
+  },
+  "name": "wasa",
+  "username": "wasa",
+  "email": "wasa123@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$W8tD3Ifge9IzeF68+Yo79g$U2eZktBZhi3dQAY0cP3LBwUQL/FJeavK68nGj9vjDig",
   "preferences": "comida",
   "address": "z18 7av col atlantida",
   "role": "CUSTOMER_ROLE",
   "estado": true,
   "createdAt": {
-    "$date": "2025-03-04T15:07:41.282Z"
+    "$date": "2025-03-11T00:35:11.248Z"
   },
   "updatedAt": {
-    "$date": "2025-03-04T15:07:41.282Z"
+    "$date": "2025-03-11T00:35:11.248Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d0d1440f2b066271e9ef10"
+  },
+  "name": "Gioma",
+  "username": "gio",
+  "email": "gioma23@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$6tLHs8FyfEsKGFovqKONDg$tY9eO8jB7U/hxO4dpMiudjpwE1HTWB22V51QZ9y4pG4",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-12T00:11:48.879Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T01:21:50.065Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d0e4f6e761c3a9665073a9"
+  },
+  "name": "Cano",
+  "username": "CanoInsano",
+  "email": "canoinsano@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Jnz7kNyZ+0xu9cWm04CQzQ$k1AsO6IJq2FOMiZWO2mkb6K/0Pc5PHH7I7flvPYoCZo",
+  "preferences": "comida",
+  "address": "z18 7av col atlantida",
+  "role": "CUSTOMER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-12T01:35:50.027Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T01:35:50.027Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d0e524e761c3a9665073ac"
+  },
+  "name": "Adrian",
+  "username": "AdrianInsano",
+  "email": "adrianinsano@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Pie8F0q6rS58D3yqg3ji/A$qpCAkXBBniUXB6+9Vb/wrHhNSLJDPrwujuJ23htBkqU",
+  "preferences": "comida",
+  "address": "z18 7av col atlantida",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-03-12T01:36:36.964Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T01:36:36.964Z"
   }
 }]
