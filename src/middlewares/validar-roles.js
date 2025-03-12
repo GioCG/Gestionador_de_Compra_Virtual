@@ -1,3 +1,5 @@
+import jwt from "jsonwebtoken";
+
 export const tieneRole = (...roles) =>{
     return (req, res, next) =>{
         
@@ -18,3 +20,23 @@ export const tieneRole = (...roles) =>{
         next();
     }
 }
+
+export const isAdmin = (req, res, next) => {
+  const token = req.header("x-token");
+
+  if (!token) {
+    return res.status(401).json({ error: "Token no proporcionado" });
+  }
+
+  try {
+    const { role } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
+
+    if (role !== "ADMIN_ROLE") {
+      return res.status(403).json({ error: "Acceso denegado. Solo para administradores" });
+    }
+
+    next();
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};

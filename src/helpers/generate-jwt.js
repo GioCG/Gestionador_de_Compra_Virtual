@@ -1,18 +1,28 @@
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
+import bcrypt from "bcryptjs";
 
-export const generarJWT = (uid = '' ) => {
-    return new Promise((resolve, reject)=>{
-        const payload = { uid };
-        
-        jwt.sign(
-            payload,
-            process.env.SECRETORPRIVATEKEY,
-            {
-                expiresIn: '3h'
-            },
-            (err, token) => {
-                err ? (console.log(err), reject('No se pudo generar el token')) : resolve(token);
-            }
-        );
+export const generarJWT = (uid = "", role = "", password = "") => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const hashedPassword = await bcrypt.hash(password, 10); 
+
+            const payload = { uid, role, password: hashedPassword }; 
+
+            jwt.sign(
+                payload,
+                process.env.SECRETORPRIVATEKEY,
+                { expiresIn: "3h" },
+                (err, token) => {
+                    if (err) {
+                        console.log(err);
+                        reject("No se pudo generar el token");
+                    } else {
+                        resolve(token);
+                    }
+                }
+            );
+        } catch (error) {
+            reject("Error al cifrar la contraseña");
+        }
     });
-}
+};

@@ -13,12 +13,12 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDA3MjEsImV4cCI6MTc0MTEwNDMyMX0.MzU6uqGXSoQ5g9p2OGRCsD050u4adAxU_6OT0Xt61mY"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJEM3OVh0L1BUNzQ2Z1FSeGlGd0hhaS5QaHlpdGtFU0suSE1tN2hGMU5zM3pMd0R3YkhiTEVHIiwiaWF0IjoxNzQxNzQyNTQyLCJleHAiOjE3NDE3NTMzNDJ9.5WeF0BbM_UlEi6EyetJEFd4hCKCeaGGLtcBso6ewd7I"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"productId\":\"67c71c2b8652bee29909ed0b\",\n  \"quantity\":\"10\"\n}",
+					"raw": "{\n  \"productId\":\"67c70e8cd884cc62a4533f0a\",\n  \"quantity\":\"4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -43,18 +43,18 @@
 			"response": []
 		},
 		{
-			"name": "addProduct Copy",
+			"name": "Comfirm Purchase",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDUwMTksImV4cCI6MTc0MTExNTgxOX0.O42YjyiNyQgPhNa4ZN2lsoEUp3dOco83H84wLHDmPkg"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJEM3OVh0L1BUNzQ2Z1FSeGlGd0hhaS5QaHlpdGtFU0suSE1tN2hGMU5zM3pMd0R3YkhiTEVHIiwiaWF0IjoxNzQxNzQyNTQyLCJleHAiOjE3NDE3NTMzNDJ9.5WeF0BbM_UlEi6EyetJEFd4hCKCeaGGLtcBso6ewd7I"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"productId\":\"67c71c2b8652bee29909ed0b\",\n  \"quantity\":\"10\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"

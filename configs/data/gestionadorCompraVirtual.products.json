@@ -5,8 +5,8 @@
   "name": "Laptop Gamer",
   "description": "Laptop de alto rendimiento",
   "price": 1200,
-  "stock": 8,
-  "sales": 0,
+  "stock": 6,
+  "sales": 2,
   "category": {
     "$oid": "67c70d9287d34bea7effdd76"
   },
@@ -16,11 +16,11 @@
   "_id": {
     "$oid": "67c70e8cd884cc62a4533f0a"
   },
-  "name": "Laptop Gamer",
-  "description": "Laptop de alto rendimiento",
+  "name": "teclado",
+  "description": "teclado wasa",
   "price": 1200,
-  "stock": 10,
-  "sales": 0,
+  "stock": 5,
+  "sales": 19,
   "category": {
     "$oid": "67c70d9287d34bea7effdd76"
   },
@@ -28,15 +28,15 @@
 },
 {
   "_id": {
-    "$oid": "67c71c2b8652bee29909ed0b"
+    "$oid": "67d0ebcda0765f929cb652cf"
   },
-  "name": "wasa",
-  "description": "tamales wasa",
+  "name": "Monitor HP",
+  "description": "Monitor HP wasa",
   "price": 1200,
-  "stock": 10,
-  "sales": 0,
+  "stock": 24,
+  "sales": 8,
   "category": {
-    "$oid": "67c70c5ef4a99ff703e544c5"
+    "$oid": "67d0f210b9b4a33575552f72"
   },
   "__v": 0
 }]

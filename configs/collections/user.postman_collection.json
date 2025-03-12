@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"username\":\"jordi\",\n  \"password\": \"admin12345\"\n}",
+					"raw": "{\n  \"username\":\"gio\",\n  \"password\": \"G123456789\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -38,13 +38,202 @@
 			"response": []
 		},
 		{
-			"name": "register",
+			"name": "login Custom",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"eaasa\",\n  \"username\":\"jordi\",\n  \"email\":\"admin12345@gmail.com\",\n  \"preferences\":\"comida\",\n  \"password\": \"admin12345\",\n  \"address\":\"z18 7av col atlantida\",\n}",
+					"raw": "{\n  \"username\":\"wasa\",\n  \"password\": \"wasa2121\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YzRiZTIwMmNmMzJlMGQyODI5ZjgiLCJyb2xlIjoiQURNSU5fUk9MRSIsImlhdCI6MTc0MTY1Mjk2NywiZXhwIjoxNzQxNjYzNzY3fQ.5RX60jV8AlN0sQp0BORmprmapRzws2Aq1wOBzEZixyw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\":\"jordi\",\n  \"password\": \"admin12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3ZDQxZTk0MmNiZGZiZjVlYjQwZjEiLCJyb2xlIjoiQ1VTVE9NRVJfUk9MRSIsImlhdCI6MTc0MTY1MzEwMSwiZXhwIjoxNzQxNjYzOTAxfQ.4hhBE-CwuvMskDjGSe_ex_v8UX6Qwi8GwRK2MRJjJ1c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Juan Pérez Actualizado\",\n  \"username\": \"juan123_actualizado\",\n  \"address\": \"Nueva Calle 456\",\n  \"preferences\": \"Nuevas preferencias\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/user/67c7d41e942cbdfbf5eb40f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"user",
+						"67c7d41e942cbdfbf5eb40f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update pasword",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJHA5YW44SmpIejluTUhrNnhqRkdjQ09Jdjg5UlZrYXhKMFdDcXc5aGdBTHE1LnF0dTdlck1xIiwiaWF0IjoxNzQxNzM4MzE2LCJleHAiOjE3NDE3NDkxMTZ9.h6aFP__Lwn4wT-A_e8yKjCJBA3RU1kpUhNCWJKT2jAQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"contraAntigua\": \"123456789\",\n  \"contraNueva\": \"G123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/user/password/67d0d1440f2b066271e9ef10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"user",
+						"password",
+						"67d0d1440f2b066271e9ef10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user Copy 2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJHA5YW44SmpIejluTUhrNnhqRkdjQ09Jdjg5UlZrYXhKMFdDcXc5aGdBTHE1LnF0dTdlck1xIiwiaWF0IjoxNzQxNzM4MzE2LCJleHAiOjE3NDE3NDkxMTZ9.h6aFP__Lwn4wT-A_e8yKjCJBA3RU1kpUhNCWJKT2jAQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"G123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/user/67d0d1440f2b066271e9ef10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"user",
+						"67d0d1440f2b066271e9ef10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3MGE4Yjg4MWYyNGZlNTY3YTVkNzkiLCJpYXQiOjE3NDExMDA3MjEsImV4cCI6MTc0MTEwNDMyMX0.MzU6uqGXSoQ5g9p2OGRCsD050u4adAxU_6OT0Xt61mY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Adrian\",\n  \"username\":\"AdrianInsano\",\n  \"email\":\"AdrianInsano@gmail.com\",\n  \"preferences\":\"comida\",\n  \"password\": \"12345678\",\n  \"address\":\"z18 7av col atlantida\"\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,7 +264,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"eaasa\",\n  \"username\":\"jordi\",\n  \"email\":\"admin12345@gmail.com\",\n  \"password\": \"admin12345\",\n  \"role\": \"ADMIN_ROLE\"\n}",
+					"raw": "{\n  \"name\": \"Adrian\",\n  \"username\":\"AdrianInsano\",\n  \"email\":\"AdrianInsano@gmail.com\",\n  \"preferences\":\"comida\",\n  \"password\": \"12345678\",\n  \"address\":\"z18 7av col atlantida\",\n  \"role\":\"ADMIN_ROLE\"\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -83,14 +272,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/GestorOpinionesSystem/v1/auth/register",
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/auth/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"GestorOpinionesSystem",
+						"gestionadorCompraVirtual",
 						"v1",
 						"auth",
 						"register"
