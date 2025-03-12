@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "67d0f77ca9716138af41db52"
+  },
+  "name": "Electrodomestico",
+  "description": "Productos para los dispositivos",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0f7b0a9716138af41db5b"
+  },
+  "name": "Comida",
+  "description": "Productos para el alimento",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d0f7d2a09029090b9263d5"
+  },
+  "name": "default",
+  "estado": true,
+  "__v": 0
+}]

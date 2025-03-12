@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "69fc61f3-9990-4e7b-8daa-8158cbefe06b",
+		"name": "bill",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42618807"
+	},
+	"item": [
+		{
+			"name": "bill",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJGJ2UkZYcGJFTUpQLkh6dExiOEpiMk90ekxMcVhFa0lXU3N1TFJkb3ZIaTd5WVMySUhzZEZHIiwiaWF0IjoxNzQxNzU3ODE3LCJleHAiOjE3NDE3Njg2MTd9.TzO0P9Q8w8O89TIi6sCFCXBdIN8dTqF1bgf4QAmRzTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/bill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"bill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bill Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QwZDE0NDBmMmIwNjYyNzFlOWVmMTAiLCJyb2xlIjoiQURNSU5fUk9MRSIsInBhc3N3b3JkIjoiJDJiJDEwJHZpQVpoS0liUmlhN0RiczFZUW5TTHVUck10cEtzekhMY1pvQ3h5dWF0cE5EWU1VRWx1Mkx1IiwiaWF0IjoxNzQxNzUzNzUyLCJleHAiOjE3NDE3NjQ1NTJ9.TEBla7HfH5BlUpAmPLH2T0V_dQYkvj5YEkMgMsOjs9M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": [\n    {\n      \"product\": \"67c70e8cd884cc62a4533f0a\",\n      \"quantity\": 2\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gestionadorCompraVirtual/v1/bill/67d105fb0b29c0a8a182dc82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gestionadorCompraVirtual",
+						"v1",
+						"bill",
+						"67d105fb0b29c0a8a182dc82"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
